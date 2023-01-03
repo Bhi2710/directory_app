@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* .......Navbar........ */
+
+h2{
+  margin: 0;
+  padding: 0;
+}
+
+.header_Section{
+  background-color: #4D72BE;
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  align-items: center;
+}
+
+.header_Section > h2{
+  color: #ffffff;
+}
+
+.Main_container_button{
+  /* border: 2px solid red; */
+  margin: 3rem 2rem;
+}
+
+.Main_container_button > button{
+  background-color: #4D72BE;
+  margin-right: 1.5rem;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.Main_table_container{
+  width: 95vw;
+  height: 60vh;
+  border: 1px solid black;
+  margin-top: 1rem;
+  overflow-y: scroll;
+}
+
+.Main_table_container_button > button{
+  padding: 10px 60px;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom:  1px solid black;
+  border-right: 1px solid black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+table, th, td{
+  border: 1px solid black;
+}
+
+td{
+  width: 16%;
+}
+
+table{
+  border-collapse: collapse;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 2rem;
+}
+
+.Main_table_container table thead tr{
+  background-color: #699AD0;
+  color: #ffffff;
+  height: 2.5rem;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.Main_table_container table tbody tr{
+  background-color: #EBEFF6;
+  height: 3rem;
+}
+
+.Main_table_container table tbody tr td input{
+  margin-left: 10%;
+}
+
+input[id="age"]{
+  background-color: #EBEFF6;
+  margin: 0 !important;
+  padding: 12px 27px;
+  border: none;
+  outline: none;
+}
+
+.Main_table_container table tbody tr td span{
+  color: #3F7DC0;
+  font-weight: 600;
+  text-decoration: underline;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.Main_table_container table tbody tr td span:nth-child(2){
+  margin-left: 2rem;
+} 
+
+.Main_button{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Main_button button{
+  margin-right: 2%;
+  cursor: pointer;
+  padding: 5px 30px;
+  border: none;
+  background-color: #3F7DC0;
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 10%;
+} 
+
+.View_input{
+  /* border: 2px solid black; */
+  margin: 2rem;
+}
+
+.View_input > input{
+  padding: 12px 40px;
+}
+
+.View_input > button{
+  margin-left: 2rem;
+  padding: 12px 30px;
+  border: none;
+  background-color: #3F7DC0;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Main_button_view_result{
+  border: 1px solid black;
+  width: 300px;
+  margin-left: 2rem;
+}
+.Main_button_view_result h5{
+  margin-left: 1rem;
+}
+
+h5 > span:nth-child(2){
+  margin-left: 2rem;
+  /* color: #3F7DC0; */
+}
+
+
+
+@media screen and (max-width: 1000px){
+  .Main_table_container table tbody tr td input{
+    margin: 4px;
+  }
+}
